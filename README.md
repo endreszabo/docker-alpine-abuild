@@ -58,7 +58,7 @@ There are a number of environment variables you can change at package build time
 You can use this image to generate keys if you don't already have them. Generate them in a container using the following command (replacing `YOUR NAME <YOUR@EMAIL>` with your own name and email):
 
 ```
-docker run --name keys --entrypoint abuild-keygen -env PACKAGER="YOUR NAME <YOUR@EMAIL>" sgerrand/alpine-abuild:3.19 -n
+docker run --name keys --entrypoint abuild-keygen --env PACKAGER="YOUR NAME <YOUR@EMAIL>" sgerrand/alpine-abuild:3.19 -n
 ```
 
 You'll see some output like the following:
